@@ -10,8 +10,69 @@
     background: #FFF;
 }
 
+.header,
+ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.header button{
+    width: 100px;
+    height: 25px;
+}
+
+.header{
+    background: var(--Main, #5361E4);
+    color: white;
+    padding-left: 200px;
+    margin-bottom: 50px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: #5361E4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
 body {
-    background-color: gray;
+    background-color: #F8F8FF;
     font-family: sans-serif;
 }
 
@@ -39,11 +100,11 @@ body {
     gap: 20px;
 }
 
-.select{
+.select {
     width: 100%;
 }
 
-.textarea{
+.textarea {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -62,7 +123,7 @@ body {
     padding-left: 15px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
 }
@@ -86,7 +147,7 @@ body {
 .links {
     gap: 15px;
     display: flex;
-    
+
 }
 
 .links a {
